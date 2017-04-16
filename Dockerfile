@@ -7,6 +7,7 @@ MAINTAINER Dave Coleman dave@dav.ee
 RUN apt-get update && apt-get install -y locales
 RUN locale-gen en_US en_US.UTF-8
 RUN update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+ENV LANG en_US.UTF-8
 
 # lsb-release is required for the keys
 RUN apt-get update
